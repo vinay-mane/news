@@ -1,0 +1,50 @@
+.slider{
+  height: 100vh;
+}
+.main{
+  height: inherit;
+  display: flex;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  overflow: hidden;
+}
+.c1{
+  background-image:url(1.jpg) ;
+}
+.c2{
+  background-image:url(2.jpg) ;
+}
+.c3{
+  background-image:url(3.jpg) ;
+}
+.c4{
+  background-image:url(4.jpg) ;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.cm{
+  font-size: 80px;
+  overflow: hidden;
+  transition-property: width;
+  transition-duration: 1.5s;
+  color: rgb(61, 61, 61);
+  /* background-color: rgb(253, 253, 253); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.cx{
+  width: 10%;
+  transition-property: width;
+  transition-duration: 1.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cx:hover{
+  width: 90%;
+}
+.cx:hover ~.cm{
+  width: 0px;
+}
